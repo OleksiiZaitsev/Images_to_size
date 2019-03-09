@@ -1,8 +1,6 @@
 import sys, os, re, cv2, stat
 from PyQt5.QtWidgets import QWidget,QDialog,QApplication,QFileDialog
-
 import images_to_size_UI
-
 
 
 class MyWindow(QDialog, QWidget):
@@ -155,9 +153,7 @@ class MyWindow(QDialog, QWidget):
         else:
             info = "There are no images in the current directory!"
             self.add_log(info, color ='red')
-        
-        
-        
+
 
 if __name__ == "__main__":
     if not QApplication.instance():
